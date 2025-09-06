@@ -148,7 +148,7 @@ sysctl net.inet.ip.portrange.last
 
 The output hit me like a freight train:
 
-```
+```bash
 net.inet.ip.portrange.first: 49152
 net.inet.ip.portrange.last: 65535
 ```
