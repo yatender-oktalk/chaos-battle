@@ -1,0 +1,32 @@
+{
+  "test_name": "custom_test",
+  "description": "Customize this for your specific test needs",
+  "server_startup_timeout": 15,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 15000,
+      "batch_size": 75,
+      "connection_timeout": 2.5,
+      "failure_threshold": 0.35
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 300,
+      "batch_size": 3000,
+      "message_size_multiplier": 12,
+      "error_threshold": 500
+    },
+    "endurance_test": {
+      "enabled": true,
+      "duration": 30,
+      "checkpoint_interval": 5,
+      "messages_per_batch": 500
+    }
+  },
+  "reporting": {
+    "progress_interval": 1500,
+    "save_raw_data": true,
+    "generate_charts": true
+  }
+}

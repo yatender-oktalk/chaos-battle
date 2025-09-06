@@ -1,0 +1,3 @@
+Test Name,Target,Achieved,Success Rate,Rate (per sec),Duration (s),Notes
+Connection Apocalypse,10000,2550,25.5%,205.8,12.39,Peak connections: 2550
+Message Tsunami,100000,10670,10.7%,162.3,65.73,Errors: 101

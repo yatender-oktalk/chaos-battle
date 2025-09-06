@@ -1,0 +1,32 @@
+{
+  "test_name": "fair_comparison",
+  "description": "Fair Go vs Elixir comparison with same parameters",
+  "server_startup_timeout": 15,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 55000,
+      "batch_size": 100,
+      "connection_timeout": 3.0,
+      "failure_threshold": 0.4
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 15,
+      "batch_size": 1000,
+      "message_size_multiplier": 1,
+      "error_threshold": 5000
+    },
+    "endurance_test": {
+      "enabled": true,
+      "duration": 60,
+      "checkpoint_interval": 10,
+      "messages_per_batch": 500
+    }
+  },
+  "reporting": {
+    "progress_interval": 1000,
+    "save_raw_data": true,
+    "generate_charts": true
+  }
+}

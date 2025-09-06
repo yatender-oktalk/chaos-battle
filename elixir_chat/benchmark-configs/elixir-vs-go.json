@@ -1,0 +1,33 @@
+{
+  "test_name": "elixir_vs_go_battle",
+  "description": "Elixir Phoenix - Head-to-head vs Go performance",
+  "server_url": "ws://localhost:8081/socket/websocket",
+  "server_startup_timeout": 15,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 21000,
+      "batch_size": 100,
+      "connection_timeout": 3.0,
+      "failure_threshold": 0.1
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 15,
+      "batch_size": 1000,
+      "message_size_multiplier": 3,
+      "error_threshold": 500
+    },
+    "endurance_test": {
+      "enabled": true,
+      "duration": 90,
+      "checkpoint_interval": 15,
+      "messages_per_batch": 200
+    }
+  },
+  "reporting": {
+    "progress_interval": 500,
+    "save_raw_data": true,
+    "generate_charts": true
+  }
+}

@@ -1,0 +1,13 @@
+services:
+  python-client:
+    build: .
+    volumes:
+      - "${PWD}/results:/app/results"  # Use absolute path
+    environment:
+      - CLIENT_ID=${CLIENT_ID:-1}
+    networks:
+      - loadtest
+
+networks:
+  loadtest:
+    driver: bridge

@@ -1,0 +1,33 @@
+{
+  "test_name": "elixir_extreme_stress",
+  "description": "Elixir Phoenix - Maximum stress test with fault tolerance",
+  "server_url": "ws://localhost:8081/socket/websocket",
+  "server_startup_timeout": 20,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 25000,
+      "batch_size": 150,
+      "connection_timeout": 2.5,
+      "failure_threshold": 0.2
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 20,
+      "batch_size": 2000,
+      "message_size_multiplier": 2,
+      "error_threshold": 2000
+    },
+    "endurance_test": {
+      "enabled": true,
+      "duration": 120,
+      "checkpoint_interval": 20,
+      "messages_per_batch": 300
+    }
+  },
+  "reporting": {
+    "progress_interval": 250,
+    "save_raw_data": true,
+    "generate_charts": true
+  }
+}

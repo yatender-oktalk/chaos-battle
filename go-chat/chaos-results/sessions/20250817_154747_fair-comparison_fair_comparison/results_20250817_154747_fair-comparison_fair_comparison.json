@@ -1,0 +1,71 @@
+{
+  "session_id": "20250817_154747_fair-comparison_fair_comparison",
+  "config_used": {
+    "test_name": "fair_comparison",
+    "description": "Fair Go vs Elixir comparison with same parameters",
+    "server_startup_timeout": 15,
+    "tests": {
+      "connection_test": {
+        "enabled": true,
+        "target_connections": 35000,
+        "batch_size": 100,
+        "connection_timeout": 3.0,
+        "failure_threshold": 0.4
+      },
+      "message_test": {
+        "enabled": true,
+        "target_multiplier": 15,
+        "batch_size": 1000,
+        "message_size_multiplier": 1,
+        "error_threshold": 5000
+      },
+      "endurance_test": {
+        "enabled": true,
+        "duration": 60,
+        "checkpoint_interval": 10,
+        "messages_per_batch": 500
+      }
+    },
+    "reporting": {
+      "progress_interval": 1000,
+      "save_raw_data": true,
+      "generate_charts": true
+    }
+  },
+  "timestamp": "2025-08-17T13:47:47.866435+00:00",
+  "system_info": {
+    "os": "Darwin",
+    "processor": "Apple M2 Pro",
+    "cpu_cores": 10,
+    "cpu_threads": 10,
+    "memory_total_gb": 16.0,
+    "file_descriptor_limit": 100000,
+    "timestamp": "2025-08-17T13:47:47.866598+00:00"
+  },
+  "test_results": [
+    {
+      "test": "configurable_connection_test",
+      "config": {
+        "enabled": true,
+        "target_connections": 35000,
+        "batch_size": 100,
+        "connection_timeout": 3.0,
+        "failure_threshold": 0.4
+      },
+      "target_connections": 35000,
+      "successful_connections": 35000,
+      "failed_connections": 0,
+      "success_rate": 100.0,
+      "creation_time": 31.665857076644897,
+      "connection_rate": 1105.2914157758323,
+      "timestamp": "2025-08-17T13:48:19.547224+00:00"
+    }
+  ],
+  "performance_timeline": [],
+  "summary": {
+    "max_connections": 35000,
+    "peak_message_rate": 0,
+    "total_messages": 0,
+    "test_config": "fair_comparison"
+  }
+}

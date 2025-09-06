@@ -1,0 +1,29 @@
+{
+  "test_name": "extreme_performance",
+  "description": "Previous best performance test",
+  "server_startup_timeout": 15,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 10000,
+      "batch_size": 50,
+      "connection_timeout": 2.0,
+      "failure_threshold": 0.3
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 100,
+      "batch_size": 10000,
+      "message_size_multiplier": 10,
+      "error_threshold": 100
+    },
+    "endurance_test": {
+      "enabled": false
+    }
+  },
+  "reporting": {
+    "progress_interval": 1000,
+    "save_raw_data": true,
+    "generate_charts": true
+  }
+}

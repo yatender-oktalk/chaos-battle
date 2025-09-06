@@ -1,0 +1,153 @@
+{
+  "benchmark_info": {
+    "test_name": "elixir_raw_enhanced_macos",
+    "timestamp": "2025-08-23T13:16:33.082306",
+    "server_url": "ws://localhost:8081/ws"
+  },
+  "connection_test": {
+    "target_connections": 50000,
+    "successful_connections": 50000,
+    "failed_connections": 0,
+    "success_rate": 100.0,
+    "connection_rate": 5737.401243555193,
+    "duration": 8.714746952056885,
+    "batch_size": 100,
+    "timeout": 3.0,
+    "final_system_stats": {
+      "timestamp": 1755947800.93101,
+      "cpu_percent": 29.9,
+      "memory_used_mb": 6226.453125,
+      "memory_percent": 67.5,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 50000,
+      "open_files": 0,
+      "network_connections": 0
+    }
+  },
+  "system_monitoring": {
+    "monitoring_duration": 7.732578992843628,
+    "total_snapshots": 8,
+    "system_cpu": {
+      "min": 0.0,
+      "max": 32.7,
+      "avg": 25.937500000000004
+    },
+    "system_memory": {
+      "min_mb": 6163.234375,
+      "max_mb": 6230.5,
+      "avg_mb": 6208.697265625
+    },
+    "beam_cpu": {
+      "min": 0.0,
+      "max": 0.0,
+      "avg": 0.0
+    },
+    "beam_memory": {
+      "min_mb": 0.0,
+      "max_mb": 0.0,
+      "avg_mb": 0.0
+    },
+    "peak_open_files": 0,
+    "peak_network_connections": 0
+  },
+  "monitoring_snapshots": [
+    {
+      "timestamp": 1755947793.198431,
+      "cpu_percent": 0.0,
+      "memory_used_mb": 6163.234375,
+      "memory_percent": 67.2,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 6800,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1755947794.300873,
+      "cpu_percent": 26.3,
+      "memory_used_mb": 6213.359375,
+      "memory_percent": 67.5,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 13300,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1755947795.414795,
+      "cpu_percent": 28.7,
+      "memory_used_mb": 6211.078125,
+      "memory_percent": 67.5,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 19600,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1755947796.5173728,
+      "cpu_percent": 31.0,
+      "memory_used_mb": 6208.125,
+      "memory_percent": 67.4,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 26000,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1755947797.6234,
+      "cpu_percent": 28.4,
+      "memory_used_mb": 6211.59375,
+      "memory_percent": 67.4,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 32300,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1755947798.7255669,
+      "cpu_percent": 32.7,
+      "memory_used_mb": 6205.234375,
+      "memory_percent": 67.4,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 38600,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1755947799.829011,
+      "cpu_percent": 30.5,
+      "memory_used_mb": 6230.5,
+      "memory_percent": 67.6,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 45000,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1755947800.93101,
+      "cpu_percent": 29.9,
+      "memory_used_mb": 6226.453125,
+      "memory_percent": 67.5,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 50000,
+      "open_files": 0,
+      "network_connections": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "test_name": "nuclear_conservative",
+  "description": "Conservative nuclear - focus on message throughput with proven connection count",
+  "server_startup_timeout": 15,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 20000,
+      "batch_size": 100,
+      "connection_timeout": 3.0,
+      "failure_threshold": 0.25
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 100,
+      "batch_size": 3000,
+      "message_size_multiplier": 10,
+      "error_threshold": 10000
+    },
+    "endurance_test": {
+      "enabled": true,
+      "duration": 45,
+      "checkpoint_interval": 10,
+      "messages_per_batch": 750
+    }
+  },
+  "reporting": {
+    "progress_interval": 1500,
+    "save_raw_data": true,
+    "generate_charts": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "test_name": "elixir_raw_enhanced_macos",
+  "description": "Enhanced Elixir Raw WebSocket Test - macOS Optimized",
+  "server_url": "ws://localhost:8081/ws",
+  "raw_websocket": true,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 50000,
+      "batch_size": 100,
+      "connection_timeout": 3.0,
+      "failure_threshold": 0.4
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 15,
+      "batch_size": 1000,
+      "message_size_multiplier": 1,
+      "error_threshold": 5000
+    },
+    "endurance_test": {
+      "enabled": true,
+      "duration": 60,
+      "checkpoint_interval": 10,
+      "messages_per_batch": 1000
+    }
+  }
+}

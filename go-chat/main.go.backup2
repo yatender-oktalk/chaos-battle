@@ -1,0 +1,290 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"log"
+	"net/http"
+	"runtime"
+	"sync"
+	"time"
+
+	"github.com/gorilla/websocket"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+)
+
+var (
+	connectionsGauge = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "active_connections",
+		Help: "Number of active WebSocket connections",
+	})
+
+	messagesCounter = prometheus.NewCounter(prometheus.CounterOpts{
+		Name: "messages_total",
+		Help: "Total number of messages processed",
+	})
+
+	memoryGauge = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "memory_usage_bytes",
+		Help: "Current memory usage in bytes",
+	})
+)
+
+func init() {
+	prometheus.MustRegister(connectionsGauge)
+	prometheus.MustRegister(messagesCounter)
+	prometheus.MustRegister(memoryGauge)
+}
+
+type Hub struct {
+	clients    map[*Client]bool
+	broadcast  chan []byte
+	register   chan *Client
+	unregister chan *Client
+	mutex      sync.RWMutex
+}
+
+type Client struct {
+	hub  *Hub
+	conn *websocket.Conn
+	send chan []byte
+	id   string
+}
+
+type Message struct {
+	Type    string    `json:"type"`
+	User    string    `json:"user"`
+	Content string    `json:"content"`
+	Time    time.Time `json:"time"`
+}
+
+var upgrader = websocket.Upgrader{
+	CheckOrigin: func(r *http.Request) bool {
+		return true // Allow connections from any origin
+	},
+}
+
+func newHub() *Hub {
+	return &Hub{
+		clients:    make(map[*Client]bool),
+		broadcast:  make(chan []byte),
+		register:   make(chan *Client),
+		unregister: make(chan *Client),
+	}
+}
+
+func (h *Hub) run() {
+	for {
+		select {
+		case client := <-h.register:
+			h.mutex.Lock()
+			h.clients[client] = true
+			h.mutex.Unlock()
+			connectionsGauge.Set(float64(len(h.clients)))
+			log.Printf("Client %s connected. Total: %d", client.id, len(h.clients))
+
+		case client := <-h.unregister:
+			h.mutex.Lock()
+			if _, ok := h.clients[client]; ok {
+				delete(h.clients, client)
+				close(client.send)
+			}
+			h.mutex.Unlock()
+			connectionsGauge.Set(float64(len(h.clients)))
+			log.Printf("Client %s disconnected. Total: %d", client.id, len(h.clients))
+
+		case message := <-h.broadcast:
+			messagesCounter.Inc()
+			h.mutex.RLock()
+			for client := range h.clients {
+				select {
+				case client.send <- message:
+				default:
+					delete(h.clients, client)
+					close(client.send)
+				}
+			}
+			h.mutex.RUnlock()
+		}
+	}
+}
+
+func serveWS(hub *Hub, w http.ResponseWriter, r *http.Request) {
+	conn, err := upgrader.Upgrade(w, r, nil)
+	if err != nil {
+		log.Println("Upgrade error:", err)
+		return
+	}
+
+	clientID := r.URL.Query().Get("id")
+	if clientID == "" {
+		clientID = fmt.Sprintf("user_%d", time.Now().UnixNano())
+	}
+
+	client := &Client{
+		hub:  hub,
+		conn: conn,
+		send: make(chan []byte, 256),
+		id:   clientID,
+	}
+
+	client.hub.register <- client
+
+	// Start goroutines for this client
+	go client.writePump()
+	go client.readPump()
+}
+
+func (c *Client) readPump() {
+	defer func() {
+		c.hub.unregister <- c
+		c.conn.Close()
+	}()
+
+	c.conn.SetReadLimit(512)
+	c.conn.SetReadDeadline(time.Now().Add(60 * time.Second))
+	c.conn.SetPongHandler(func(string) error {
+		c.conn.SetReadDeadline(time.Now().Add(60 * time.Second))
+		return nil
+	})
+
+	for {
+		_, message, err := c.conn.ReadMessage()
+		if err != nil {
+			if websocket.IsUnexpectedCloseError(err, websocket.CloseGoingAway, websocket.CloseAbnormalClosure) {
+				log.Printf("error: %v", err)
+			}
+			break
+		}
+
+		var msg Message
+		if err := json.Unmarshal(message, &msg); err == nil {
+			msg.User = c.id
+			msg.Time = time.Now()
+
+			if data, err := json.Marshal(msg); err == nil {
+				c.hub.broadcast <- data
+			}
+		}
+	}
+}
+
+func (c *Client) writePump() {
+	ticker := time.NewTicker(54 * time.Second)
+	defer func() {
+		ticker.Stop()
+		c.conn.Close()
+	}()
+
+	for {
+		select {
+		case message, ok := <-c.send:
+			c.conn.SetWriteDeadline(time.Now().Add(10 * time.Second))
+			if !ok {
+				c.conn.WriteMessage(websocket.CloseMessage, []byte{})
+				return
+			}
+
+			if err := c.conn.WriteMessage(websocket.TextMessage, message); err != nil {
+				return
+			}
+
+		case <-ticker.C:
+			c.conn.SetWriteDeadline(time.Now().Add(10 * time.Second))
+			if err := c.conn.WriteMessage(websocket.PingMessage, nil); err != nil {
+				return
+			}
+		}
+	}
+}
+
+func collectMetrics() {
+	for {
+		var m runtime.MemStats
+		runtime.ReadMemStats(&m)
+		memoryGauge.Set(float64(m.Alloc))
+		time.Sleep(5 * time.Second)
+	}
+}
+
+func main() {
+	hub := newHub()
+	go hub.run()
+	go collectMetrics()
+
+	// WebSocket endpoint
+	http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
+		serveWS(hub, w, r)
+	})
+
+	// Metrics endpoint for Prometheus
+	http.Handle("/metrics", promhttp.Handler())
+
+	// Health check endpoint
+	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
+		hub.mutex.RLock()
+		stats := map[string]interface{}{
+			"status":      "healthy",
+			"connections": len(hub.clients),
+			"uptime":      time.Since(time.Now()).String(),
+		}
+		hub.mutex.RUnlock()
+
+		w.Header().Set("Content-Type", "application/json")
+		json.NewEncoder(w).Encode(stats)
+	})
+
+	// Simple HTML page for testing
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html")
+		fmt.Fprintf(w, `
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Go Chat Test</title>
+</head>
+<body>
+    <h1>Go Chat Server</h1>
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        const ws = new WebSocket('ws://localhost:8080/ws?id=test_user');
+        const messages = document.getElementById('messages');
+
+        ws.onmessage = function(event) {
+            const message = JSON.parse(event.data);
+            messages.innerHTML += '<div>' + message.user + ': ' + message.content + '</div>';
+        };
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = {
+                type: 'chat',
+                content: input.value
+            };
+            ws.send(JSON.stringify(message));
+            input.value = '';
+        }
+
+        document.getElementById('messageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
+        `)
+	})
+
+	log.Println("Go Chat Server starting on :8080")
+	log.Println("WebSocket endpoint: ws://localhost:8080/ws")
+	log.Println("Health check: http://localhost:8080/health")
+	log.Println("Metrics: http://localhost:8080/metrics")
+	log.Println("Test page: http://localhost:8080/")
+
+	log.Fatal(http.ListenAndServe(":8080", nil))
+}

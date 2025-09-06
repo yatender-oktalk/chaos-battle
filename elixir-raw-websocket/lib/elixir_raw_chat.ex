@@ -1,0 +1,2 @@
+defmodule ElixirRawChat do
+end

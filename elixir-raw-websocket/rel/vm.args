@@ -1,0 +1,34 @@
+## BEAM VM Optimization for WebSocket Performance
+
+## Async thread pool (default is usually 10-64)
++A 128
+
+## Enable kernel polling for better I/O
++K true
+
+## Max processes (you have good ulimit, let's use it)
++P 2000000
+
+## Max ETS tables
++e 256000
+
+## Max ports (file descriptors, sockets)
++Q 1048576
+
+## Distribution buffer busy limit
++zdbbl 32768
+
+## Scheduler bind type (bind schedulers to cores)
++sbt db
+
+## Scheduler wake cleanup threshold
++swct very_low
+
+## Dirty CPU schedulers (match your CPU cores)
++SDcpu 8:8
+
+## Dirty IO schedulers
++SDio 8
+
+## Enable SMP
+-smp enable

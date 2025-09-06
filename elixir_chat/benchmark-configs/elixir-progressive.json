@@ -1,0 +1,33 @@
+{
+  "test_name": "elixir_progressive",
+  "description": "Elixir Phoenix WebSocket - Progressive scaling test",
+  "server_url": "ws://localhost:8081/socket/websocket",
+  "server_startup_timeout": 15,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 20000,
+      "batch_size": 100,
+      "connection_timeout": 3.0,
+      "failure_threshold": 0.15
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 10,
+      "batch_size": 500,
+      "message_size_multiplier": 5,
+      "error_threshold": 1000
+    },
+    "endurance_test": {
+      "enabled": true,
+      "duration": 60,
+      "checkpoint_interval": 10,
+      "messages_per_batch": 250
+    }
+  },
+  "reporting": {
+    "progress_interval": 1000,
+    "save_raw_data": true,
+    "generate_charts": true
+  }
+}

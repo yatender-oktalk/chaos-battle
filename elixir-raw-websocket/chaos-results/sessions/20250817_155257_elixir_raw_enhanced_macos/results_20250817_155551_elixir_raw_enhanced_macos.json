@@ -1,0 +1,51 @@
+{
+  "benchmark_info": {
+    "test_name": "elixir_raw_enhanced_macos",
+    "description": "Enhanced Elixir Raw WebSocket Test - macOS Optimized",
+    "timestamp": "2025-08-17T15:52:57.155947",
+    "server_url": "ws://localhost:8081/ws",
+    "language": "elixir",
+    "framework": "raw"
+  },
+  "connection_test": {
+    "target_connections": 50000,
+    "successful_connections": 50000,
+    "failed_connections": 0,
+    "success_rate": 100.0,
+    "connection_rate": 1146.6176574631527,
+    "duration": 43.6065149307251,
+    "batch_size": 100,
+    "timeout": 3.0
+  },
+  "message_test": {
+    "target_messages": 750000,
+    "messages_sent": 750000,
+    "messages_failed": 0,
+    "success_rate": 100.0,
+    "message_rate": 27910.244108521714,
+    "duration": 26.871853828430176,
+    "active_connections": 50000,
+    "batch_size": 1000
+  },
+  "endurance_test": {
+    "duration": 60.01428580284119,
+    "total_messages": 2675000,
+    "average_rate": 44572.72071499617,
+    "checkpoint_rates": [
+      41933.028606682536,
+      47940.67856746551,
+      42418.83422728562,
+      48731.30824238742,
+      42714.37254033976
+    ],
+    "messages_per_batch": 1000,
+    "checkpoint_interval": 10
+  },
+  "system_info": {
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "python_version": "3.11.5",
+    "cpu_count": 10,
+    "memory_total": 17179869184,
+    "timestamp": "2025-08-17T15:52:57.169769"
+  }
+}

@@ -1,0 +1,1036 @@
+{
+  "timeline": [
+    {
+      "timestamp": "2025-08-13T11:01:03.483416+00:00",
+      "test": "server_startup",
+      "metrics": {
+        "startup_time": 0.014182090759277344,
+        "pid": 88178
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:03.639217+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 0,
+        "batch_successful": 50,
+        "batch_time": 0.0524752140045166,
+        "total_successful": 50,
+        "total_failed": 0,
+        "current_rate": 952.7615361200837
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:05.115099+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 1000,
+        "batch_successful": 50,
+        "batch_time": 0.015477895736694336,
+        "total_successful": 1050,
+        "total_failed": 0,
+        "current_rate": 687.0126778557935
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:06.613518+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 2000,
+        "batch_successful": 50,
+        "batch_time": 0.017162084579467773,
+        "total_successful": 2050,
+        "total_failed": 0,
+        "current_rate": 677.2873855988183
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:08.138788+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 3000,
+        "batch_successful": 50,
+        "batch_time": 0.017731189727783203,
+        "total_successful": 3050,
+        "total_failed": 0,
+        "current_rate": 670.0277729446287
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:09.665110+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 4000,
+        "batch_successful": 50,
+        "batch_time": 0.015358924865722656,
+        "total_successful": 4050,
+        "total_failed": 0,
+        "current_rate": 666.2974839882226
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:11.226030+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 5000,
+        "batch_successful": 50,
+        "batch_time": 0.016838788986206055,
+        "total_successful": 5050,
+        "total_failed": 0,
+        "current_rate": 661.0565608269054
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:12.791733+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 6000,
+        "batch_successful": 50,
+        "batch_time": 0.017134666442871094,
+        "total_successful": 6050,
+        "total_failed": 0,
+        "current_rate": 657.2519928816783
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:14.370717+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 7000,
+        "batch_successful": 50,
+        "batch_time": 0.01726222038269043,
+        "total_successful": 7050,
+        "total_failed": 0,
+        "current_rate": 653.7480445213401
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:15.893788+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 7950,
+        "batch_successful": 50,
+        "batch_time": 0.017856121063232422,
+        "total_successful": 8000,
+        "total_failed": 0,
+        "current_rate": 650.0343523447303
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.075727+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8000,
+        "batch_successful": 50,
+        "batch_time": 0.02572488784790039,
+        "total_successful": 8050,
+        "total_failed": 0,
+        "current_rate": 644.5679901341285
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.258837+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8050,
+        "batch_successful": 50,
+        "batch_time": 0.028632164001464844,
+        "total_successful": 8100,
+        "total_failed": 0,
+        "current_rate": 639.1997504299997
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.443672+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8100,
+        "batch_successful": 50,
+        "batch_time": 0.02978205680847168,
+        "total_successful": 8150,
+        "total_failed": 0,
+        "current_rate": 633.8995706642178
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.633892+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8150,
+        "batch_successful": 50,
+        "batch_time": 0.033097267150878906,
+        "total_successful": 8200,
+        "total_failed": 0,
+        "current_rate": 628.4898436609875
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.817811+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8200,
+        "batch_successful": 50,
+        "batch_time": 0.027079105377197266,
+        "total_successful": 8250,
+        "total_failed": 0,
+        "current_rate": 623.5323351796816
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.999080+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8250,
+        "batch_successful": 50,
+        "batch_time": 0.024074077606201172,
+        "total_successful": 8300,
+        "total_failed": 0,
+        "current_rate": 618.8345269215691
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.185237+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8300,
+        "batch_successful": 50,
+        "batch_time": 0.029073238372802734,
+        "total_successful": 8350,
+        "total_failed": 0,
+        "current_rate": 614.0381294285424
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.364603+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8350,
+        "batch_successful": 50,
+        "batch_time": 0.022530794143676758,
+        "total_successful": 8400,
+        "total_failed": 0,
+        "current_rate": 609.6737842436664
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.544854+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8400,
+        "batch_successful": 50,
+        "batch_time": 0.028241872787475586,
+        "total_successful": 8450,
+        "total_failed": 0,
+        "current_rate": 605.3832920391119
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.731106+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8450,
+        "batch_successful": 50,
+        "batch_time": 0.029720783233642578,
+        "total_successful": 8500,
+        "total_failed": 0,
+        "current_rate": 600.9464528246389
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.916453+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8500,
+        "batch_successful": 50,
+        "batch_time": 0.028662919998168945,
+        "total_successful": 8550,
+        "total_failed": 0,
+        "current_rate": 596.6627462386277
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.100256+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8550,
+        "batch_successful": 50,
+        "batch_time": 0.026996850967407227,
+        "total_successful": 8600,
+        "total_failed": 0,
+        "current_rate": 592.551558749531
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.287421+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8600,
+        "batch_successful": 50,
+        "batch_time": 0.03026103973388672,
+        "total_successful": 8650,
+        "total_failed": 0,
+        "current_rate": 588.4081545697027
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.473432+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8650,
+        "batch_successful": 50,
+        "batch_time": 0.028981924057006836,
+        "total_successful": 8700,
+        "total_failed": 0,
+        "current_rate": 584.414672277812
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.663880+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8700,
+        "batch_successful": 50,
+        "batch_time": 0.033464908599853516,
+        "total_successful": 8750,
+        "total_failed": 0,
+        "current_rate": 580.349330822187
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.842270+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8750,
+        "batch_successful": 50,
+        "batch_time": 0.021312952041625977,
+        "total_successful": 8800,
+        "total_failed": 0,
+        "current_rate": 576.839657833999
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.013275+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8800,
+        "batch_successful": 50,
+        "batch_time": 0.0176389217376709,
+        "total_successful": 8850,
+        "total_failed": 0,
+        "current_rate": 573.6865705183948
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.195800+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8850,
+        "batch_successful": 50,
+        "batch_time": 0.025758981704711914,
+        "total_successful": 8900,
+        "total_failed": 0,
+        "current_rate": 570.18142218142
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.374056+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8900,
+        "batch_successful": 50,
+        "batch_time": 0.0209500789642334,
+        "total_successful": 8950,
+        "total_failed": 0,
+        "current_rate": 566.9105180440818
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.546903+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 8950,
+        "batch_successful": 50,
+        "batch_time": 0.02194809913635254,
+        "total_successful": 9000,
+        "total_failed": 0,
+        "current_rate": 563.9037668613805
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.726503+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9000,
+        "batch_successful": 50,
+        "batch_time": 0.023057937622070312,
+        "total_successful": 9050,
+        "total_failed": 0,
+        "current_rate": 560.7266344644391
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.017711+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9050,
+        "batch_successful": 50,
+        "batch_time": 0.13408708572387695,
+        "total_successful": 9100,
+        "total_failed": 0,
+        "current_rate": 553.8318801670212
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.184708+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9100,
+        "batch_successful": 50,
+        "batch_time": 0.012566089630126953,
+        "total_successful": 9150,
+        "total_failed": 0,
+        "current_rate": 551.2720039589203
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.363592+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9150,
+        "batch_successful": 50,
+        "batch_time": 0.02199411392211914,
+        "total_successful": 9200,
+        "total_failed": 0,
+        "current_rate": 548.374399242875
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.538165+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9200,
+        "batch_successful": 50,
+        "batch_time": 0.01798415184020996,
+        "total_successful": 9250,
+        "total_failed": 0,
+        "current_rate": 545.6765443026943
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.710978+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9250,
+        "batch_successful": 50,
+        "batch_time": 0.016639232635498047,
+        "total_successful": 9300,
+        "total_failed": 0,
+        "current_rate": 543.089631655252
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.889147+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9300,
+        "batch_successful": 50,
+        "batch_time": 0.021754980087280273,
+        "total_successful": 9350,
+        "total_failed": 0,
+        "current_rate": 540.3870253128276
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.065065+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9350,
+        "batch_successful": 50,
+        "batch_time": 0.01935100555419922,
+        "total_successful": 9400,
+        "total_failed": 0,
+        "current_rate": 537.8088212909147
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.245140+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9400,
+        "batch_successful": 50,
+        "batch_time": 0.02354907989501953,
+        "total_successful": 9450,
+        "total_failed": 0,
+        "current_rate": 535.1560134458645
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.426256+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9450,
+        "batch_successful": 50,
+        "batch_time": 0.024255990982055664,
+        "total_successful": 9500,
+        "total_failed": 0,
+        "current_rate": 532.5256248773962
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.603247+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9500,
+        "batch_successful": 50,
+        "batch_time": 0.02016901969909668,
+        "total_successful": 9550,
+        "total_failed": 0,
+        "current_rate": 530.0692165618206
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.778243+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9550,
+        "batch_successful": 50,
+        "batch_time": 0.018707275390625,
+        "total_successful": 9600,
+        "total_failed": 0,
+        "current_rate": 527.7187006471747
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.954004+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9600,
+        "batch_successful": 50,
+        "batch_time": 0.019919157028198242,
+        "total_successful": 9650,
+        "total_failed": 0,
+        "current_rate": 525.3910626193195
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.128175+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9650,
+        "batch_successful": 50,
+        "batch_time": 0.017605066299438477,
+        "total_successful": 9700,
+        "total_failed": 0,
+        "current_rate": 523.1522607119446
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.304450+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9700,
+        "batch_successful": 50,
+        "batch_time": 0.019765138626098633,
+        "total_successful": 9750,
+        "total_failed": 0,
+        "current_rate": 520.8968546257495
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.479677+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9750,
+        "batch_successful": 50,
+        "batch_time": 0.019141197204589844,
+        "total_successful": 9800,
+        "total_failed": 0,
+        "current_rate": 518.7121422015174
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.657534+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9800,
+        "batch_successful": 50,
+        "batch_time": 0.020974159240722656,
+        "total_successful": 9850,
+        "total_failed": 0,
+        "current_rate": 516.4963962363852
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.833354+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9850,
+        "batch_successful": 50,
+        "batch_time": 0.018781185150146484,
+        "total_successful": 9900,
+        "total_failed": 0,
+        "current_rate": 514.375923987595
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:23.011740+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9900,
+        "batch_successful": 50,
+        "batch_time": 0.021834850311279297,
+        "total_successful": 9950,
+        "total_failed": 0,
+        "current_rate": 512.2263248749898
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:23.191098+00:00",
+      "test": "apocalypse_batch",
+      "metrics": {
+        "batch_start": 9950,
+        "batch_successful": 50,
+        "batch_time": 0.02242302894592285,
+        "total_successful": 10000,
+        "total_failed": 0,
+        "current_rate": 510.09037406883635
+      }
+    },
+    {
+      "timestamp": "2025-08-13T11:01:23.347218+00:00",
+      "test": "apocalypse_final",
+      "metrics": {
+        "total_successful": 10000,
+        "total_failed": 0,
+        "total_time": 19.760417938232422,
+        "final_rate": 506.0621709145138
+      }
+    }
+  ],
+  "resource_usage": [
+    {
+      "timestamp": "2025-08-13T11:01:03.483510+00:00",
+      "test_phase": "apocalypse_start",
+      "cpu_percent": 10.7,
+      "memory_percent": 75.7,
+      "memory_available_gb": 3.8833160400390625,
+      "active_connections": 0
+    },
+    {
+      "timestamp": "2025-08-13T11:01:03.639229+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 17.0,
+      "memory_percent": 75.7,
+      "memory_available_gb": 3.8833160400390625,
+      "active_connections": 50
+    },
+    {
+      "timestamp": "2025-08-13T11:01:05.115111+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 31.7,
+      "memory_percent": 75.5,
+      "memory_available_gb": 3.9123382568359375,
+      "active_connections": 1050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:06.613530+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 19.4,
+      "memory_percent": 75.5,
+      "memory_available_gb": 3.913909912109375,
+      "active_connections": 2050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:08.138802+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 13.3,
+      "memory_percent": 75.5,
+      "memory_available_gb": 3.9253387451171875,
+      "active_connections": 3050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:09.665125+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 13.6,
+      "memory_percent": 75.8,
+      "memory_available_gb": 3.8656158447265625,
+      "active_connections": 4050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:11.226047+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 38.6,
+      "memory_percent": 75.9,
+      "memory_available_gb": 3.858184814453125,
+      "active_connections": 5050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:12.791745+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 17.6,
+      "memory_percent": 75.7,
+      "memory_available_gb": 3.8833465576171875,
+      "active_connections": 6050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:14.370729+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 14.7,
+      "memory_percent": 76.2,
+      "memory_available_gb": 3.8146514892578125,
+      "active_connections": 7050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:15.893800+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 32.4,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.8301544189453125,
+      "active_connections": 8000
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.075741+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 30.5,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.8301544189453125,
+      "active_connections": 8050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.258849+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 11.9,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.8301544189453125,
+      "active_connections": 8100
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.443690+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.8301544189453125,
+      "active_connections": 8150
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.633903+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.8301544189453125,
+      "active_connections": 8200
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.817822+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 21.0,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.8301544189453125,
+      "active_connections": 8250
+    },
+    {
+      "timestamp": "2025-08-13T11:01:16.999132+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 29.5,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.8160858154296875,
+      "active_connections": 8300
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.185245+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 12.3,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.825408935546875,
+      "active_connections": 8350
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.364618+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.0,
+      "memory_available_gb": 3.83294677734375,
+      "active_connections": 8400
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.544870+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.831268310546875,
+      "active_connections": 8450
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.731120+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.831268310546875,
+      "active_connections": 8500
+    },
+    {
+      "timestamp": "2025-08-13T11:01:17.916467+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 24.7,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.831268310546875,
+      "active_connections": 8550
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.100272+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 29.0,
+      "memory_percent": 76.1,
+      "memory_available_gb": 3.8283233642578125,
+      "active_connections": 8600
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.287430+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 33.3,
+      "memory_percent": 76.2,
+      "memory_available_gb": 3.8148345947265625,
+      "active_connections": 8650
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.473442+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 19.8,
+      "memory_percent": 76.2,
+      "memory_available_gb": 3.8148345947265625,
+      "active_connections": 8700
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.663899+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 30.2,
+      "memory_percent": 76.2,
+      "memory_available_gb": 3.8148345947265625,
+      "active_connections": 8750
+    },
+    {
+      "timestamp": "2025-08-13T11:01:18.842279+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.2,
+      "memory_available_gb": 3.8148345947265625,
+      "active_connections": 8800
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.013283+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 50.2,
+      "memory_percent": 76.2,
+      "memory_available_gb": 3.8148345947265625,
+      "active_connections": 8850
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.195809+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.1,
+      "memory_available_gb": 3.65704345703125,
+      "active_connections": 8900
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.374066+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.2,
+      "memory_available_gb": 3.6549072265625,
+      "active_connections": 8950
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.546909+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.2,
+      "memory_available_gb": 3.6413726806640625,
+      "active_connections": 9000
+    },
+    {
+      "timestamp": "2025-08-13T11:01:19.726509+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.2,
+      "memory_available_gb": 3.6413726806640625,
+      "active_connections": 9050
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.017723+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 46.5,
+      "memory_percent": 77.2,
+      "memory_available_gb": 3.6413726806640625,
+      "active_connections": 9100
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.184721+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 34.0,
+      "memory_percent": 77.2,
+      "memory_available_gb": 3.6413726806640625,
+      "active_connections": 9150
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.363599+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.7,
+      "memory_available_gb": 3.724365234375,
+      "active_connections": 9200
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.538177+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.9,
+      "memory_available_gb": 3.703582763671875,
+      "active_connections": 9250
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.710985+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.9,
+      "memory_available_gb": 3.703582763671875,
+      "active_connections": 9300
+    },
+    {
+      "timestamp": "2025-08-13T11:01:20.889154+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 76.9,
+      "memory_available_gb": 3.703582763671875,
+      "active_connections": 9350
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.065074+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 27.3,
+      "memory_percent": 76.9,
+      "memory_available_gb": 3.703582763671875,
+      "active_connections": 9400
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.245147+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 31.7,
+      "memory_percent": 76.9,
+      "memory_available_gb": 3.703582763671875,
+      "active_connections": 9450
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.426264+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 33.3,
+      "memory_percent": 77.3,
+      "memory_available_gb": 3.6260833740234375,
+      "active_connections": 9500
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.603255+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 21.0,
+      "memory_percent": 77.3,
+      "memory_available_gb": 3.6260833740234375,
+      "active_connections": 9550
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.778250+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.3,
+      "memory_available_gb": 3.6260833740234375,
+      "active_connections": 9600
+    },
+    {
+      "timestamp": "2025-08-13T11:01:21.954011+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.3,
+      "memory_available_gb": 3.6260833740234375,
+      "active_connections": 9650
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.128181+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 29.7,
+      "memory_percent": 77.3,
+      "memory_available_gb": 3.6260833740234375,
+      "active_connections": 9700
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.304461+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 16.5,
+      "memory_percent": 77.3,
+      "memory_available_gb": 3.6260833740234375,
+      "active_connections": 9750
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.479685+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.6,
+      "memory_available_gb": 3.589263916015625,
+      "active_connections": 9800
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.657542+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.6,
+      "memory_available_gb": 3.589263916015625,
+      "active_connections": 9850
+    },
+    {
+      "timestamp": "2025-08-13T11:01:22.833361+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.6,
+      "memory_available_gb": 3.589263916015625,
+      "active_connections": 9900
+    },
+    {
+      "timestamp": "2025-08-13T11:01:23.011746+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.6,
+      "memory_available_gb": 3.589263916015625,
+      "active_connections": 9950
+    },
+    {
+      "timestamp": "2025-08-13T11:01:23.191105+00:00",
+      "test_phase": "apocalypse_progress",
+      "cpu_percent": 24.7,
+      "memory_percent": 77.6,
+      "memory_available_gb": 3.589263916015625,
+      "active_connections": 10000
+    },
+    {
+      "timestamp": "2025-08-13T11:01:23.347270+00:00",
+      "test_phase": "apocalypse_end",
+      "cpu_percent": 0.0,
+      "memory_percent": 77.6,
+      "memory_available_gb": 3.589263916015625,
+      "active_connections": 10000
+    },
+    {
+      "timestamp": "2025-08-13T11:01:26.449615+00:00",
+      "test_phase": "tsunami_start",
+      "cpu_percent": 38.8,
+      "memory_percent": 77.7,
+      "memory_available_gb": 3.5666046142578125,
+      "active_connections": 10000
+    },
+    {
+      "timestamp": "2025-08-13T11:01:55.134631+00:00",
+      "test_phase": "tsunami_end",
+      "cpu_percent": 50.5,
+      "memory_percent": 78.1,
+      "memory_available_gb": 3.496124267578125,
+      "active_connections": 10000
+    }
+  ]
+}

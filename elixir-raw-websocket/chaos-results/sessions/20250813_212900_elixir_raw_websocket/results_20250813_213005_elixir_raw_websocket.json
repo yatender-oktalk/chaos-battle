@@ -1,0 +1,51 @@
+{
+  "benchmark_info": {
+    "test_name": "elixir_raw_websocket",
+    "description": "Raw Elixir WebSocket - No Phoenix overhead",
+    "timestamp": "2025-08-13T21:29:00.190520",
+    "server_url": "ws://localhost:8081/ws",
+    "language": "elixir",
+    "framework": "raw"
+  },
+  "connection_test": {
+    "target_connections": 25000,
+    "successful_connections": 2519,
+    "failed_connections": 281,
+    "success_rate": 10.076,
+    "connection_rate": 611.8521420742736,
+    "duration": 4.117007732391357,
+    "batch_size": 100,
+    "timeout": 3.0
+  },
+  "message_test": {
+    "target_messages": 37785,
+    "messages_sent": 36889,
+    "messages_failed": 896,
+    "success_rate": 97.62868863305545,
+    "message_rate": 44304.09555620905,
+    "duration": 0.8326318264007568,
+    "active_connections": 2519,
+    "batch_size": 1000
+  },
+  "endurance_test": {
+    "duration": 60.00890326499939,
+    "total_messages": 1557500,
+    "average_rate": 49.86843971758979,
+    "checkpoint_rates": [
+      49.81520299123073,
+      49.90110785927562,
+      49.972049992548044,
+      49.84226452612834,
+      49.811573218766185
+    ],
+    "messages_per_batch": 500,
+    "checkpoint_interval": 10
+  },
+  "system_info": {
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "python_version": "3.11.5",
+    "cpu_count": 10,
+    "memory_total": 17179869184,
+    "timestamp": "2025-08-13T21:29:00.204397"
+  }
+}

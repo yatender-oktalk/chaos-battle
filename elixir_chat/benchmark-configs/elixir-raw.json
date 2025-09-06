@@ -1,0 +1,29 @@
+{
+  "test_name": "elixir_raw_websocket",
+  "description": "Raw Elixir WebSocket - No Phoenix overhead",
+  "server_url": "ws://localhost:8082/ws",
+  "raw_websocket": true,
+  "server_startup_timeout": 15,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 25000,
+      "batch_size": 100,
+      "connection_timeout": 3.0,
+      "failure_threshold": 0.1
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 15,
+      "batch_size": 1000,
+      "message_size_multiplier": 3,
+      "error_threshold": 1000
+    },
+    "endurance_test": {
+      "enabled": true,
+      "duration": 60,
+      "checkpoint_interval": 10,
+      "messages_per_batch": 500
+    }
+  }
+}

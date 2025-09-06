@@ -1,0 +1,85 @@
+{
+  "session_id": "20250813_173932_basic_basic_performance",
+  "config_used": {
+    "test_name": "basic_performance",
+    "description": "Basic performance baseline test",
+    "server_startup_timeout": 10,
+    "tests": {
+      "connection_test": {
+        "enabled": true,
+        "target_connections": 5000,
+        "batch_size": 50,
+        "connection_timeout": 2.0,
+        "failure_threshold": 0.3
+      },
+      "message_test": {
+        "enabled": true,
+        "target_multiplier": 100,
+        "batch_size": 1000,
+        "message_size_multiplier": 10,
+        "error_threshold": 100
+      },
+      "endurance_test": {
+        "enabled": false
+      }
+    },
+    "reporting": {
+      "progress_interval": 1000,
+      "save_raw_data": true,
+      "generate_charts": false
+    }
+  },
+  "timestamp": "2025-08-13T15:39:32.945824+00:00",
+  "system_info": {
+    "os": "Darwin",
+    "processor": "Apple M2 Pro",
+    "cpu_cores": 10,
+    "cpu_threads": 10,
+    "memory_total_gb": 16.0,
+    "file_descriptor_limit": 100000,
+    "timestamp": "2025-08-13T15:39:32.946413+00:00"
+  },
+  "test_results": [
+    {
+      "test": "configurable_connection_test",
+      "config": {
+        "enabled": true,
+        "target_connections": 5000,
+        "batch_size": 50,
+        "connection_timeout": 2.0,
+        "failure_threshold": 0.3
+      },
+      "target_connections": 5000,
+      "successful_connections": 5000,
+      "failed_connections": 0,
+      "success_rate": 100.0,
+      "creation_time": 6.950047016143799,
+      "connection_rate": 719.4195936208539,
+      "timestamp": "2025-08-13T15:39:40.917772+00:00"
+    },
+    {
+      "test": "configurable_message_test",
+      "config": {
+        "enabled": true,
+        "target_multiplier": 100,
+        "batch_size": 1000,
+        "message_size_multiplier": 10,
+        "error_threshold": 100
+      },
+      "target_messages": 500000,
+      "messages_sent": 500000,
+      "errors": 0,
+      "success_rate": 100.0,
+      "message_rate": 54311.502813893334,
+      "test_time": 9.20615291595459,
+      "timestamp": "2025-08-13T15:39:53.125381+00:00"
+    }
+  ],
+  "performance_timeline": [],
+  "summary": {
+    "max_connections": 5000,
+    "peak_message_rate": 54311.502813893334,
+    "total_messages": 500000,
+    "test_config": "basic_performance"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "test_name": "elixir_monitored_75k",
+  "description": "75K Connections with Full System Monitoring",
+  "server_url": "ws://localhost:8081/ws",
+  "raw_websocket": true,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 75000,
+      "batch_size": 250,
+      "connection_timeout": 5.0,
+      "failure_threshold": 0.15
+    }
+  }
+}

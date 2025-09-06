@@ -1,0 +1,12 @@
+{
+    "server_url": "ws://host.docker.internal:8081/ws",
+    "test_name": "distributed_test",
+    "tests": {
+      "connection_test": {
+        "enabled": true,
+        "target_connections": 25000,
+        "batch_size": 100,
+        "connection_timeout": 5
+      }
+    }
+  }

@@ -1,0 +1,25 @@
+{
+  "test_name": "elixir_single_75k_beast",
+  "description": "Single Server 75K - Finding the Limit",
+  "server_url": "ws://localhost:8081/ws",
+  "raw_websocket": true,
+  "tests": {
+    "connection_test": {
+      "enabled": true,
+      "target_connections": 75000,
+      "batch_size": 250,
+      "connection_timeout": 5.0,
+      "failure_threshold": 0.15
+    },
+    "message_test": {
+      "enabled": true,
+      "target_multiplier": 5,
+      "batch_size": 1000,
+      "message_size_multiplier": 1,
+      "error_threshold": 15000
+    },
+    "endurance_test": {
+      "enabled": false
+    }
+  }
+}
