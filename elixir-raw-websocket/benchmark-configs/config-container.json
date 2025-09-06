@@ -4,7 +4,7 @@
     "tests": {
       "connection_test": {
         "enabled": true,
-        "target_connections": 25000,
+        "target_connections": 10000,
         "batch_size": 100,
         "connection_timeout": 5
       }

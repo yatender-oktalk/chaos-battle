@@ -1,0 +1,321 @@
+{
+  "benchmark_info": {
+    "test_name": "distributed_test",
+    "timestamp": "2025-09-06T12:31:20.752636",
+    "server_url": "ws://host.docker.internal:8081/ws"
+  },
+  "connection_test": {
+    "target_connections": 25000,
+    "successful_connections": 25000,
+    "failed_connections": 0,
+    "success_rate": 100.0,
+    "connection_rate": 1007.2370475990338,
+    "duration": 24.82037377357483,
+    "batch_size": 100,
+    "timeout": 5,
+    "final_system_stats": {
+      "timestamp": 1757161904.6377497,
+      "cpu_percent": 19.6,
+      "memory_used_mb": 3272.1328125,
+      "memory_percent": 44.8,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 25000,
+      "open_files": 0,
+      "network_connections": 0
+    }
+  },
+  "system_monitoring": {
+    "monitoring_duration": 23.7834312915802,
+    "total_snapshots": 22,
+    "system_cpu": {
+      "min": 9.1,
+      "max": 66.7,
+      "avg": 23.204545454545453
+    },
+    "system_memory": {
+      "min_mb": 2292.40234375,
+      "max_mb": 3272.1328125,
+      "avg_mb": 2833.670809659091
+    },
+    "beam_cpu": {
+      "min": 0.0,
+      "max": 0.0,
+      "avg": 0.0
+    },
+    "beam_memory": {
+      "min_mb": 0.0,
+      "max_mb": 0.0,
+      "avg_mb": 0.0
+    },
+    "peak_open_files": 0,
+    "peak_network_connections": 0
+  },
+  "monitoring_snapshots": [
+    {
+      "timestamp": 1757161880.8543184,
+      "cpu_percent": 22.3,
+      "memory_used_mb": 2369.83984375,
+      "memory_percent": 33.3,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 1900,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161881.9680698,
+      "cpu_percent": 21.1,
+      "memory_used_mb": 2292.40234375,
+      "memory_percent": 32.3,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 3900,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161883.0730925,
+      "cpu_percent": 33.0,
+      "memory_used_mb": 2382.98046875,
+      "memory_percent": 33.5,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 5700,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161884.1795194,
+      "cpu_percent": 24.7,
+      "memory_used_mb": 2427.65234375,
+      "memory_percent": 34.0,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 7200,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161885.2829967,
+      "cpu_percent": 25.9,
+      "memory_used_mb": 2509.3671875,
+      "memory_percent": 35.1,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 9000,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161886.3958588,
+      "cpu_percent": 25.3,
+      "memory_used_mb": 2573.90234375,
+      "memory_percent": 35.9,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 10600,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161887.5004141,
+      "cpu_percent": 26.3,
+      "memory_used_mb": 2644.6640625,
+      "memory_percent": 36.8,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 12300,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161888.61065,
+      "cpu_percent": 38.3,
+      "memory_used_mb": 2727.0625,
+      "memory_percent": 37.9,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 13800,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161889.7146556,
+      "cpu_percent": 25.5,
+      "memory_used_mb": 2776.3125,
+      "memory_percent": 38.5,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 14800,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161890.8201857,
+      "cpu_percent": 17.5,
+      "memory_used_mb": 2821.5,
+      "memory_percent": 39.1,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 15700,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161891.922979,
+      "cpu_percent": 24.2,
+      "memory_used_mb": 2833.49609375,
+      "memory_percent": 39.2,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 16500,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161893.1945057,
+      "cpu_percent": 15.7,
+      "memory_used_mb": 2893.10546875,
+      "memory_percent": 40.0,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 17500,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161894.2973056,
+      "cpu_percent": 17.3,
+      "memory_used_mb": 2963.16796875,
+      "memory_percent": 40.9,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 18400,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161895.5865324,
+      "cpu_percent": 13.7,
+      "memory_used_mb": 2973.0625,
+      "memory_percent": 41.0,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 19200,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161896.7009864,
+      "cpu_percent": 17.0,
+      "memory_used_mb": 3026.73828125,
+      "memory_percent": 41.7,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 20100,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161897.8036926,
+      "cpu_percent": 15.5,
+      "memory_used_mb": 3025.6796875,
+      "memory_percent": 41.7,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 20700,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161898.905787,
+      "cpu_percent": 19.4,
+      "memory_used_mb": 3103.51171875,
+      "memory_percent": 42.7,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 21600,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161900.0074916,
+      "cpu_percent": 14.4,
+      "memory_used_mb": 3108.6484375,
+      "memory_percent": 42.7,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 22300,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161901.1096816,
+      "cpu_percent": 66.7,
+      "memory_used_mb": 3197.99609375,
+      "memory_percent": 43.9,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 23000,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161902.430492,
+      "cpu_percent": 18.0,
+      "memory_used_mb": 3205.12890625,
+      "memory_percent": 44.0,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 23600,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161903.5336854,
+      "cpu_percent": 9.1,
+      "memory_used_mb": 3212.40625,
+      "memory_percent": 44.0,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 24300,
+      "open_files": 0,
+      "network_connections": 0
+    },
+    {
+      "timestamp": 1757161904.6377497,
+      "cpu_percent": 19.6,
+      "memory_used_mb": 3272.1328125,
+      "memory_percent": 44.8,
+      "beam_cpu_percent": 0.0,
+      "beam_memory_mb": 0.0,
+      "beam_memory_percent": 0.0,
+      "connections_count": 25000,
+      "open_files": 0,
+      "network_connections": 0
+    }
+  ]
+}
